@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.bg-pink {
+    background-color: pink;
+}
+
+body {
+    background-color: gainsboro;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: white;
+    background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+    background-size: cover;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    background: lightpink;
+}
+
+.navigation {
+    flex-grow: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+}
+
+  li {
+    display: inline;
+}
+
+#main {
+    border: 2px solid lightsteelblue;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+footer {
+    text-align: center;
+    background-color: lightpink;
+    color: white;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 40px;
+}
+
+.logo {
+    padding: 4px;
+    margin: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-carrito {
+    border: none;
+    background:lightsteelblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 30px;
+    color:white;
+    font-size: 1rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.cantidad--carrito {
+    padding: 6px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.item {
+    text-decoration: none;
+    margin-left: 24px;
+    color: white;
+}
+
+
+/* Visibilidad productos del carrito */
+.sidebar {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    position: absolute;
+    box-shadow: 10px 10px 15px rgba(67, 224, 217, 0.5);
+    flex-direction: column;
+    background: rgb(230, 185, 192);
+    border: 2px solid lightsteelblue;
+    width: 30%;
+    visibility: hidden;
+    left: 70%;
+    
+}
+
+.active {
+    visibility: visible;
+}
+
+/* cards de la tienda */
+.caja {
+    margin: auto;
+}
+.caja--img {
+    width: 200px;
+    padding: 10px;
+}
+.caja--datos {
+    text-align: center;
+}
+
+/* cards del carrito */
+.caja--carrito {
+    width: 160px;
+    text-align: center;
+}
+
+.caja-carrito-img {
+    width: 160px;
+}
+
+.caja--carrito--datos {
+    border: 2px solid lightsteelblue;
+    color: white;
+    font-weight: bold;
+}
